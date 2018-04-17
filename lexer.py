@@ -1,18 +1,4 @@
-import sys
-import re
-import ply.lex as lex
 
-
-def analisis_lex(caracteres):
-    tokens = [
-        
-        # Literals (identifier, integer constant, float constant, string constant, char const)
-        'NAME', 'TYPEID', 'INTEGER', 'FLOAT', 'STRING', 'CHARACTER',
-
-        # Operators (+,-,*,/,%,|,&,~,^,<<,>>, ||, &&, !, <, <=, >, >=, ==, !=)
-        'PLUS', 'MINUS', 'TIMES', 'DIVIDE', 'MODULO',
-        'OR', 'AND', 'NOT', 'XOR', 'LSHIFT', 'RSHIFT',
-        'LOR', 'LAND', 'LNOT',
         'LT', 'LE', 'GT', 'GE', 'EQ', 'NE',
 
         # Assignment (=, *=, /=, %=, +=, -=, <<=, >>=, &=, ^=, |=)
